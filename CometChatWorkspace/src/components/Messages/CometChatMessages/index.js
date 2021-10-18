@@ -1034,10 +1034,12 @@ class CometChatMessages extends React.PureComponent {
 			messageComposer = null;
 		}
 
-		if (this.getContext().type === CometChat.RECEIVER_TYPE.USER && Object.keys(this.getContext().item).length && this.getContext().item.blockedByMe) {
-			messageComposer = null;
-			messageList = null;
-			blockedUser = <CometChatBlockedUser user={this.item} />;
+		if (undefined !== this.getContext()) {
+			if (this.getContext().type === CometChat.RECEIVER_TYPE.USER && Object.keys(this.getContext().item).length && this.getContext().item.blockedByMe) {
+				messageComposer = null;
+				messageList = null;
+				blockedUser = <CometChatBlockedUser user={this.item} />;
+			}
 		}
 
 		let liveReactionView = null;
