@@ -1,7 +1,7 @@
 export const theme = {
     fontFamily: "Inter, sans-serif",
     fontSize: "14px",
-    primaryColor: "#39f",
+    primaryColor: "#e0e5ea",
     secondaryTextColor: "#808080",
     color: {
         primary: "#141414",
@@ -11,7 +11,7 @@ export const theme = {
         tertiary: "rgba(20, 20, 20, 0.5)",
         grey: "rgba(20,20,20,0.04)",
         helpText: "rgba(20, 20, 20, 0.6)",
-        blue: "#39f",
+        blue: "#e0e5ea",
         white: "#fff",
         red: "#ff3b30"
     },
